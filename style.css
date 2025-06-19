@@ -1,0 +1,146 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.game {
+  height: 618px;
+  width: 448px;
+  border-radius: 20px;
+  border: 3px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.boxes {
+  width: 300px;
+  height: 264px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 75px;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  color: #ff26a5;
+  background-color: #181818;
+  font-size: 3rem;
+  box-shadow: 0 0 10px #444;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 382.4px;
+  height: 128px;
+  margin-top: 8px;
+}
+
+.curr-player {
+  text-align: center;
+  color: #ff26a5;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h1 {
+  text-align: center;
+}
+
+.win {
+  text-align: center;
+}
+
+.history {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+#playerx {
+  color: #00ffd5;
+}
+
+#playero {
+  color: #ff26a5;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.newgame {
+  width: 382.4px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #00f0ff;
+  font-size: 1rem;
+  font-weight: 550;
+  color: black;
+  transition: background-color 0.4s ease;
+  margin-bottom: 5px;
+}
+
+.reset {
+  width: 382.4px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 550;
+  background-color: #c084fc;
+  color: black;
+  transition: background-color 0.4s ease;
+}
+
+.box:hover {
+  border: 3px solid rgb(0, 251, 255);
+  box-shadow: 0 0 12px rgb(0, 251, 255);
+}
+
+.newgame:hover {
+  background-color: #00eeffea;
+}
+
+.reset:hover {
+  background-color: #c084fce3;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.2);
+    opacity:0;
+  }
+  70% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {    
+    transform: scale(1);
+  }
+}
+
+.box.pop {
+  animation: pop 0.25s ease-in;
+}
