@@ -117,14 +117,17 @@ h1 {
 .box:hover {
   border: 3px solid rgb(0, 251, 255);
   box-shadow: 0 0 12px rgb(0, 251, 255);
+  cursor: pointer;
 }
 
 .newgame:hover {
   background-color: #00eeffea;
+  cursor: pointer;
 }
 
 .reset:hover {
   background-color: #c084fce3;
+  cursor: pointer;
 }
 
 @keyframes pop {
@@ -143,4 +146,16 @@ h1 {
 
 .box.pop {
   animation: pop 0.25s ease-in;
+}
+
+@media (max-width: 500px) {
+  .box {
+    font-size: 2rem;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .curr-player {
+    font-size: 1rem;
+  }
 }
